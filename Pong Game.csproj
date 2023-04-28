@@ -104,5 +104,23 @@
   <ItemGroup>
     <None Include="Resources\1Ns1.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifgit %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifgit-2--unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifgit %283%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbe8ae2e31e0f2f88615010bd5f6462e.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bola-de-Futebol-600x581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace Pong_Game.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0 {
+            get {
+                object obj = ResourceManager.GetObject("0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1Ns1 {
             get {
                 object obj = ResourceManager.GetObject("1Ns1", resourceCulture);
@@ -73,9 +83,59 @@ namespace Pong_Game.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bola_de_Futebol_600x581 {
+            get {
+                object obj = ResourceManager.GetObject("Bola-de-Futebol-600x581", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dbe8ae2e31e0f2f88615010bd5f6462e {
+            get {
+                object obj = ResourceManager.GetObject("dbe8ae2e31e0f2f88615010bd5f6462e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gifgit {
             get {
                 object obj = ResourceManager.GetObject("gifgit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gifgit__1_ {
+            get {
+                object obj = ResourceManager.GetObject("gifgit (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gifgit__3_ {
+            get {
+                object obj = ResourceManager.GetObject("gifgit (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gifgit_2__unscreen {
+            get {
+                object obj = ResourceManager.GetObject("gifgit-2--unscreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -74,5 +74,32 @@ namespace Pong_Game
             }
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            pictureBox4.Location = new Point(pictureBox4.Location.X +10, pictureBox4.Location.Y);
+            if (pictureBox4.Bounds.IntersectsWith(Racket_Az.Bounds))
+            {
+                timer1.Stop();
+                timer2.Start();
+            }
+            
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y);
+            if (pictureBox4.Bounds.IntersectsWith(Racket_Vm.Bounds))
+            {
+                timer2.Stop();
+                timer1.Start();
+            }
+        }
+
+        private void Tela_Game_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }
