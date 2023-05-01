@@ -18,6 +18,7 @@ namespace Pong_Game
         }
         Random rand = new Random();
         int numrand=0;
+        String direcao;
         public int sortear()
         {   
             numrand = rand.Next(1, 4);
@@ -64,25 +65,33 @@ namespace Pong_Game
             }
             else if (e.KeyCode == Keys.W)
             {
-                if (panel1.Bounds.IntersectsWith(pictureBox2.Bounds))
+                if (pictureBox5.Bounds.IntersectsWith(pictureBox2.Bounds))
                 {
-                    panel1.Location = new Point(panel1.Location.X, panel1.Location.Y);
+                    pictureBox5.Location = new Point(pictureBox5.Location.X, pictureBox5.Location.Y);
+                    pictureBox6.Location = new Point(pictureBox6.Location.X, pictureBox6.Location.Y);
+                    pictureBox7.Location = new Point(pictureBox7.Location.X, pictureBox7.Location.Y);
                 }
                 else
                 {
-                    panel1.Location = new Point(panel1.Location.X, panel1.Location.Y - 10);
+                    pictureBox5.Location = new Point(pictureBox5.Location.X, pictureBox5.Location.Y -10);
+                    pictureBox6.Location = new Point(pictureBox6.Location.X, pictureBox6.Location.Y -10);
+                    pictureBox7.Location = new Point(pictureBox7.Location.X, pictureBox7.Location.Y -10);
                 }
                
             }
             else if (e.KeyCode == Keys.S)
             {
-                if (panel1.Bounds.IntersectsWith(pictureBox3.Bounds))
+                if (pictureBox7.Bounds.IntersectsWith(pictureBox3.Bounds))
                 {
-                    panel1.Location = new Point(panel1.Location.X, panel1.Location.Y);
+                    pictureBox7.Location = new Point(pictureBox7.Location.X, pictureBox7.Location.Y);
+                    pictureBox6.Location = new Point(pictureBox6.Location.X, pictureBox6.Location.Y);
+                    pictureBox5.Location = new Point(pictureBox5.Location.X, pictureBox5.Location.Y);
                 }
                 else
                 {
-                    panel1.Location = new Point(panel1.Location.X, panel1.Location.Y + 10);
+                    pictureBox7.Location = new Point(pictureBox7.Location.X, pictureBox7.Location.Y +10);
+                    pictureBox6.Location = new Point(pictureBox6.Location.X, pictureBox6.Location.Y +10);
+                    pictureBox5.Location = new Point(pictureBox5.Location.X, pictureBox5.Location.Y + 10);
                 }
                 
             }
@@ -95,16 +104,39 @@ namespace Pong_Game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            {
+                timer2.Stop();
+                timer1.Start();
+            }
 
-            
-            
+            else if (numrand == 1)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 10);
+            }
+            else if (numrand == 2)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y);
+            }
+            else if (numrand == 3)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y -10);
+            }
+
+
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            {  
+                timer2.Stop();
+                timer1.Start();
+            }
+
             if (numrand == 1)
             {
-                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 10);
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y );
             }
             else if (numrand == 2)
             {
@@ -112,16 +144,9 @@ namespace Pong_Game
             }
             else if (numrand == 3)
             {
-                pictureBox4.Location = new Point(pictureBox4.Location.X -
-                    10, pictureBox4.Location.Y + 10);
+                pictureBox4.Location = new Point(pictureBox4.Location.X -10, pictureBox4.Location.Y );
             }
 
-
-            //if (pictureBox4.Bounds.IntersectsWith(panel1.Bounds))
-            //{  
-            //    timer2.Stop();
-            //    timer1.Start();
-            //}
         }
 
         private void Tela_Game_Load(object sender, EventArgs e)
@@ -132,17 +157,167 @@ namespace Pong_Game
 
         private void timer_inicio_Tick(object sender, EventArgs e)
         {
-            pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y);
+           
             if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
             {
 
                 sortear();
-                if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
-                {
-                    
-                }
                 timer_inicio.Stop();
                 timer2.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
+                {
+                sortear();
+                timer_inicio.Stop();
+                timer1.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
+            {
+                sortear();
+                timer_inicio.Stop();
+                Timer_Pb10.Start();
+            }
+            else
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y);
+            }
+
+
+        }
+
+        private void Timer_Pb10_Tick(object sender, EventArgs e)
+        {
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            {
+                timer2.Stop();
+                timer1.Start();
+            }
+
+            else if (numrand == 1)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y +10);
+            }
+            else if (numrand == 2)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y);
+            }
+            else if (numrand == 3)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y + 10);
+            }
+        }
+
+        private void Timer_Pb6_Tick(object sender, EventArgs e)
+        {
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            {
+                timer2.Stop();
+                timer1.Start();
+            }
+
+            else if (numrand == 1)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X +10, pictureBox4.Location.Y );
+            }
+            else if (numrand == 2)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y);
+            }
+            else if (numrand == 3)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X +10, pictureBox4.Location.Y);
+            }
+        }
+
+        private void Timer_Pb5_Tick(object sender, EventArgs e)
+        {
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            {
+                timer2.Stop();
+                timer1.Start();
+            }
+
+            else if (numrand == 1)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y - 10);
+            }
+            else if (numrand == 2)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y);
+            }
+            else if (numrand == 3)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y - 10);
+            }
+        }
+
+        private void Timer_Pb7_Tick(object sender, EventArgs e)
+        {
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            {
+                timer2.Stop();
+                timer1.Start();
+            }
+
+            else if (numrand == 1)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y + 10);
+            }
+            else if (numrand == 2)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y);
+            }
+            else if (numrand == 3)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y + 10);
+            }
+        }
+
+        private void Timer_Pb2_Tick(object sender, EventArgs e)
+        {
+            //se a bola tocar em algo
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            {
+                timer2.Stop();
+                timer1.Start();
+            }
+
+            //direções da bola
+            else if (numrand == 1)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y + 3);
+            }
+            else if (numrand == 2)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y +6);
+            }
+            else if (numrand == 3)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y + 10);
+            }
+        }
+
+        private void Timer_Pb3_Tick(object sender, EventArgs e)
+        {
+            //se a bola tocar em algo
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            {
+                timer2.Stop();
+                timer1.Start();
+            }
+
+            //direções da bola
+            else if (numrand == 1)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 3);
+            }
+            else if (numrand == 2)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 6);
+            }
+            else if (numrand == 3)
+            {
+                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 10);
             }
         }
     }

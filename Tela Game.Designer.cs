@@ -36,19 +36,23 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.timer_inicio = new System.Windows.Forms.Timer(this.components);
+            this.Timer_Pb10 = new System.Windows.Forms.Timer(this.components);
+            this.Timer_Pb5 = new System.Windows.Forms.Timer(this.components);
+            this.Timer_Pb6 = new System.Windows.Forms.Timer(this.components);
+            this.Timer_Pb7 = new System.Windows.Forms.Timer(this.components);
+            this.Timer_Pb2 = new System.Windows.Forms.Timer(this.components);
+            this.Timer_Pb3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -108,26 +112,16 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Black;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Location = new System.Drawing.Point(17, 239);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(23, 30);
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Location = new System.Drawing.Point(11, 239);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(23, 90);
-            this.panel1.TabIndex = 7;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 60);
+            this.pictureBox7.Location = new System.Drawing.Point(17, 299);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(23, 30);
             this.pictureBox7.TabIndex = 8;
@@ -136,7 +130,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Red;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox6.Location = new System.Drawing.Point(17, 269);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(23, 30);
             this.pictureBox6.TabIndex = 8;
@@ -144,8 +138,8 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Fuchsia;
-            this.pictureBox10.Location = new System.Drawing.Point(884, 299);
+            this.pictureBox10.BackColor = System.Drawing.Color.Blue;
+            this.pictureBox10.Location = new System.Drawing.Point(926, 299);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(23, 30);
             this.pictureBox10.TabIndex = 9;
@@ -153,8 +147,8 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Yellow;
-            this.pictureBox9.Location = new System.Drawing.Point(884, 269);
+            this.pictureBox9.BackColor = System.Drawing.Color.Blue;
+            this.pictureBox9.Location = new System.Drawing.Point(926, 269);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(23, 30);
             this.pictureBox9.TabIndex = 9;
@@ -162,8 +156,8 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Black;
-            this.pictureBox8.Location = new System.Drawing.Point(884, 239);
+            this.pictureBox8.BackColor = System.Drawing.Color.Blue;
+            this.pictureBox8.Location = new System.Drawing.Point(926, 239);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(23, 30);
             this.pictureBox8.TabIndex = 9;
@@ -174,15 +168,47 @@
             this.timer_inicio.Interval = 35;
             this.timer_inicio.Tick += new System.EventHandler(this.timer_inicio_Tick);
             // 
+            // Timer_Pb10
+            // 
+            this.Timer_Pb10.Interval = 50;
+            this.Timer_Pb10.Tick += new System.EventHandler(this.Timer_Pb10_Tick);
+            // 
+            // Timer_Pb5
+            // 
+            this.Timer_Pb5.Interval = 50;
+            this.Timer_Pb5.Tick += new System.EventHandler(this.Timer_Pb5_Tick);
+            // 
+            // Timer_Pb6
+            // 
+            this.Timer_Pb6.Interval = 50;
+            this.Timer_Pb6.Tick += new System.EventHandler(this.Timer_Pb6_Tick);
+            // 
+            // Timer_Pb7
+            // 
+            this.Timer_Pb7.Interval = 50;
+            this.Timer_Pb7.Tick += new System.EventHandler(this.Timer_Pb7_Tick);
+            // 
+            // Timer_Pb2
+            // 
+            this.Timer_Pb2.Interval = 50;
+            this.Timer_Pb2.Tick += new System.EventHandler(this.Timer_Pb2_Tick);
+            // 
+            // Timer_Pb3
+            // 
+            this.Timer_Pb3.Interval = 50;
+            this.Timer_Pb3.Tick += new System.EventHandler(this.Timer_Pb3_Tick);
+            // 
             // Tela_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(966, 612);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -200,7 +226,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -219,12 +244,17 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Timer timer_inicio;
+        private System.Windows.Forms.Timer Timer_Pb10;
+        private System.Windows.Forms.Timer Timer_Pb5;
+        private System.Windows.Forms.Timer Timer_Pb6;
+        private System.Windows.Forms.Timer Timer_Pb7;
+        private System.Windows.Forms.Timer Timer_Pb2;
+        private System.Windows.Forms.Timer Timer_Pb3;
     }
 }
