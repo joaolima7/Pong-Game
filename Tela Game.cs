@@ -424,11 +424,50 @@ namespace Pong_Game
             //se a bola tocar em algo
             if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
             {
-                timer2.Stop();
+                sortear();
+                Timer_Pb3.Stop();
+                Timer_Pb6.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox7.Bounds))
+            {
+                sortear();
+                Timer_Pb3.Stop();
+                Timer_Pb7.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox5.Bounds))
+            {
+                sortear();
+                Timer_Pb3.Stop();
+                Timer_Pb5.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox2.Bounds))
+            {
+                sortear();
+                Timer_Pb3.Stop();
+                Timer_Pb2.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
+            {
+                sortear();
+                Timer_Pb3.Stop();
                 timer1.Start();
             }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
+            {
+                sortear();
+                Timer_Pb3.Stop();
+                timer2.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
+            {
+                sortear();
+                Timer_Pb3.Stop();
+                Timer_Pb10.Start();
+            }
 
-            if (direcao == "E")
+
+
+            else if (direcao == "E")
             {
                 if (numrand == 1)
                 {
