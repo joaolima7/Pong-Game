@@ -106,18 +106,21 @@ namespace Pong_Game
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
             {
+                direcao = "D";
                 sortear();
                 timer1.Stop();
                 Timer_Pb6.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox5.Bounds))
             {
+                direcao = "D";
                 sortear();
                 timer1.Stop();
                 Timer_Pb5.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox7.Bounds))
             {
+                direcao = "D";
                 sortear();
                 timer1.Stop();
                 Timer_Pb7.Start();
@@ -143,18 +146,21 @@ namespace Pong_Game
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
             {
+                direcao = "D";
                 sortear();
                 timer2.Stop();
                 Timer_Pb6.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox5.Bounds))
             {
+                direcao = "D";
                 sortear();
                 timer2.Stop();
                 Timer_Pb5.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox7.Bounds))
             {
+                direcao = "D";
                 sortear();
                 timer2.Stop();
                 Timer_Pb7.Start();
@@ -186,19 +192,21 @@ namespace Pong_Game
            
             if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
             {
-
+                direcao = "E";
                 sortear();
                 timer_inicio.Stop();
                 timer2.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
                 {
+                direcao = "E";
                 sortear();
                 timer_inicio.Stop();
                 timer1.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
             {
+                direcao = "E";
                 sortear();
                 timer_inicio.Stop();
                 Timer_Pb10.Start();
@@ -215,18 +223,21 @@ namespace Pong_Game
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
             {
+                direcao = "D";
                 sortear();
                 Timer_Pb10.Stop();
                 Timer_Pb6.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox5.Bounds))
             {
+                direcao = "D";
                 sortear();
                 Timer_Pb10.Stop();
                 Timer_Pb5.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox7.Bounds))
             {
+                direcao = "D";
                 sortear();
                 Timer_Pb10.Stop();
                 Timer_Pb7.Start();
@@ -250,18 +261,21 @@ namespace Pong_Game
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb6.Stop();
                 timer1.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb6.Stop();
                 timer2.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb6.Stop();
                 Timer_Pb10.Start();
@@ -285,18 +299,21 @@ namespace Pong_Game
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb5.Stop();
                 timer1.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb5.Stop();
                 timer2.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb5.Stop();
                 Timer_Pb10.Start();
@@ -320,18 +337,21 @@ namespace Pong_Game
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb7.Stop();
                 timer1.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb7.Stop();
                 timer2.Start();
             }
             else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
             {
+                direcao = "E";
                 sortear();
                 Timer_Pb7.Stop();
                 Timer_Pb10.Start();
