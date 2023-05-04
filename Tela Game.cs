@@ -380,19 +380,43 @@ namespace Pong_Game
                 timer1.Start();
             }
 
+
+
             //direções da bola
-            else if (numrand == 1)
+            if (direcao == "E") 
             {
-                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y + 3);
+                 if (numrand == 1)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y + 3);
+                }
+                else if (numrand == 2)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y + 6);
+                }
+                else if (numrand == 3)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y + 10);
+                }
+
             }
-            else if (numrand == 2)
+            else if (direcao == "D")
             {
-                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y +6);
+                if (numrand == 1)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y + 3);
+                }
+                else if (numrand == 2)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y + 6);
+                }
+                else if (numrand == 3)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y + 10);
+                }
             }
-            else if (numrand == 3)
-            {
-                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y + 10);
-            }
+
+
+           
         }
 
         private void Timer_Pb3_Tick(object sender, EventArgs e)
@@ -404,19 +428,38 @@ namespace Pong_Game
                 timer1.Start();
             }
 
-            //direções da bola
-            else if (numrand == 1)
+            if (direcao == "E")
             {
-                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 3);
+                if (numrand == 1)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 3);
+                }
+                else if (numrand == 2)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 6);
+                }
+                else if (numrand == 3)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 10);
+                }
+
             }
-            else if (numrand == 2)
+            else if (direcao == "D")
             {
-                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 6);
+                if (numrand == 1)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y - 3);
+                }
+                else if (numrand == 2)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y - 6);
+                }
+                else if (numrand == 3)
+                {
+                    pictureBox4.Location = new Point(pictureBox4.Location.X + 10, pictureBox4.Location.Y - 10);
+                }
             }
-            else if (numrand == 3)
-            {
-                pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y - 10);
-            }
+
         }
     }
 }
