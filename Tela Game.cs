@@ -106,8 +106,21 @@ namespace Pong_Game
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
             {
-                timer2.Stop();
-                timer1.Start();
+                sortear();
+                timer1.Stop();
+                Timer_Pb6.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox5.Bounds))
+            {
+                sortear();
+                timer1.Stop();
+                Timer_Pb5.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox7.Bounds))
+            {
+                sortear();
+                timer1.Stop();
+                Timer_Pb7.Start();
             }
 
             else if (numrand == 1)
@@ -129,12 +142,25 @@ namespace Pong_Game
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
-            {  
+            {
+                sortear();
                 timer2.Stop();
-                timer1.Start();
+                Timer_Pb6.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox5.Bounds))
+            {
+                sortear();
+                timer2.Stop();
+                Timer_Pb5.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox7.Bounds))
+            {
+                sortear();
+                timer2.Stop();
+                Timer_Pb7.Start();
             }
 
-            if (numrand == 1)
+            else if (numrand == 1)
             {
                 pictureBox4.Location = new Point(pictureBox4.Location.X - 10, pictureBox4.Location.Y );
             }
@@ -189,8 +215,21 @@ namespace Pong_Game
         {
             if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
             {
-                timer2.Stop();
-                timer1.Start();
+                sortear();
+                Timer_Pb10.Stop();
+                Timer_Pb6.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox5.Bounds))
+            {
+                sortear();
+                Timer_Pb10.Stop();
+                Timer_Pb5.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox7.Bounds))
+            {
+                sortear();
+                Timer_Pb10.Stop();
+                Timer_Pb7.Start();
             }
 
             else if (numrand == 1)
@@ -209,10 +248,23 @@ namespace Pong_Game
 
         private void Timer_Pb6_Tick(object sender, EventArgs e)
         {
-            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
             {
-                timer2.Stop();
+                sortear();
+                Timer_Pb6.Stop();
                 timer1.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
+            {
+                sortear();
+                Timer_Pb6.Stop();
+                timer2.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
+            {
+                sortear();
+                Timer_Pb6.Stop();
+                Timer_Pb10.Start();
             }
 
             else if (numrand == 1)
@@ -231,10 +283,23 @@ namespace Pong_Game
 
         private void Timer_Pb5_Tick(object sender, EventArgs e)
         {
-            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
             {
-                timer2.Stop();
+                sortear();
+                Timer_Pb5.Stop();
                 timer1.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
+            {
+                sortear();
+                Timer_Pb5.Stop();
+                timer2.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
+            {
+                sortear();
+                Timer_Pb5.Stop();
+                Timer_Pb10.Start();
             }
 
             else if (numrand == 1)
@@ -253,10 +318,23 @@ namespace Pong_Game
 
         private void Timer_Pb7_Tick(object sender, EventArgs e)
         {
-            if (pictureBox4.Bounds.IntersectsWith(pictureBox6.Bounds))
+            if (pictureBox4.Bounds.IntersectsWith(pictureBox8.Bounds))
             {
-                timer2.Stop();
+                sortear();
+                Timer_Pb7.Stop();
                 timer1.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox9.Bounds))
+            {
+                sortear();
+                Timer_Pb7.Stop();
+                timer2.Start();
+            }
+            else if (pictureBox4.Bounds.IntersectsWith(pictureBox10.Bounds))
+            {
+                sortear();
+                Timer_Pb7.Stop();
+                Timer_Pb10.Start();
             }
 
             else if (numrand == 1)
