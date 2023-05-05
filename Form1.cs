@@ -36,18 +36,18 @@ namespace Pong_Game
                 {
                     select.Play();
                     pictureBox2.Visible = false;
-                    pictureBox3.Visible = true;
-                    label3.ForeColor = Color.White;
-                    label4.ForeColor = Color.DarkOrange;
-                }
-                else if (pictureBox3.Visible)
-                {
-                    select.Play();
-                    pictureBox3.Visible = false;
                     pictureBox4.Visible = true;
-                    label4.ForeColor = Color.White;
+                    label3.ForeColor = Color.White;
                     label5.ForeColor = Color.DarkOrange;
                 }
+                //else if (pictureBox3.Visible)
+                //{
+                //    select.Play();
+                //    pictureBox3.Visible = false;
+                //    pictureBox4.Visible = true;
+                //    label4.ForeColor = Color.White;
+                //    label5.ForeColor = Color.DarkOrange;
+                //}
                 else if (pictureBox4.Visible)
                 {
                     select.Play();
@@ -75,20 +75,20 @@ namespace Pong_Game
                     label2.ForeColor = Color.DarkOrange;
                     label3.ForeColor = Color.White;
                 }
-                else if (pictureBox3.Visible)
-                {
-                    select.Play();
-                    pictureBox3.Visible = false;
-                    pictureBox2.Visible = true;
-                    label3.ForeColor = Color.DarkOrange;
-                    label4.ForeColor = Color.White;
-                }
+                //else if (pictureBox3.Visible)
+                //{
+                //    select.Play();
+                //    pictureBox3.Visible = false;
+                //    pictureBox2.Visible = true;
+                //    label3.ForeColor = Color.DarkOrange;
+                //    label4.ForeColor = Color.White;
+                //}
                 else if (pictureBox4.Visible)
                 {
                     select.Play();
                     pictureBox4.Visible = false;
-                    pictureBox3.Visible = true;
-                    label4.ForeColor = Color.DarkOrange;
+                    pictureBox2.Visible = true;
+                    label3.ForeColor = Color.DarkOrange;
                     label5.ForeColor = Color.White;
                 }
             }
@@ -102,12 +102,9 @@ namespace Pong_Game
                 }
                 else if (pictureBox2.Visible)
                 {
-
+                    MessageBox.Show("Função Indisponivel.");
                 }
-                else if (pictureBox3.Visible)
-                {
-
-                }
+               
                 else if (pictureBox4.Visible)
                 {
                     DialogResult sair = MessageBox.Show("Deseja Sair do Jogo?","SAIR",MessageBoxButtons.YesNo);
@@ -121,6 +118,11 @@ namespace Pong_Game
                     }
                 }
             }
+        }
+
+        private void Frm_Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

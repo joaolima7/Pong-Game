@@ -103,6 +103,16 @@ namespace Pong_Game.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap futebol {
+            get {
+                object obj = ResourceManager.GetObject("futebol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gifgit {
             get {
                 object obj = ResourceManager.GetObject("gifgit", resourceCulture);

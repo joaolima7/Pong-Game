@@ -31,14 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,23 +70,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(195, 196);
+            this.label3.Location = new System.Drawing.Point(195, 207);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 35);
             this.label3.TabIndex = 3;
             this.label3.Text = "RANK";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(194, 232);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 35);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "CONFIG";
             // 
             // label5
             // 
@@ -97,7 +82,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe Print", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(195, 268);
+            this.label5.Location = new System.Drawing.Point(195, 255);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 35);
             this.label5.TabIndex = 6;
@@ -106,7 +91,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Pong_Game.Properties.Resources.gifgit;
-            this.pictureBox4.Location = new System.Drawing.Point(152, 278);
+            this.pictureBox4.Location = new System.Drawing.Point(152, 265);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(44, 19);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -114,21 +99,10 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Visible = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Pong_Game.Properties.Resources.gifgit;
-            this.pictureBox3.Location = new System.Drawing.Point(150, 244);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 19);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Pong_Game.Properties.Resources.gifgit;
-            this.pictureBox2.Location = new System.Drawing.Point(150, 207);
+            this.pictureBox2.Location = new System.Drawing.Point(150, 218);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(44, 19);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,11 +127,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(471, 372);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -166,9 +138,9 @@
             this.Name = "Frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pong Game";
+            this.Load += new System.EventHandler(this.Frm_Menu_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Frm_Menu_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -181,11 +153,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

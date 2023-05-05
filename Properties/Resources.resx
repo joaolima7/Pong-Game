@@ -121,8 +121,8 @@
   <data name="dbe8ae2e31e0f2f88615010bd5f6462e" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dbe8ae2e31e0f2f88615010bd5f6462e.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bola-de-Futebol-600x581" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bola-de-Futebol-600x581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gifgit (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gifgit (3).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gifgit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gifgit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,8 +133,8 @@
   <data name="right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\right-arrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gifgit (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gifgit (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bola-de-Futebol-600x581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bola-de-Futebol-600x581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gifgit-2--unscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gifgit-2--unscreen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,13 +142,16 @@
   <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gifgit (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gifgit (3).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gifgit (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gifgit (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1Ns1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1Ns1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="futebol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\futebol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
